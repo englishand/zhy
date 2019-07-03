@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+  <!--<endpoint implementation="com.wzh.webservice.TestWebService" name="TestWebServiceImplService" url-pattern="/TestWebServiceImplService"/>-->
+  <endpoint name="WebService"
+        implementation="com.ssh.webservice.WebServiceImpl"
+        url-pattern="/WebService" />
+</endpoints>

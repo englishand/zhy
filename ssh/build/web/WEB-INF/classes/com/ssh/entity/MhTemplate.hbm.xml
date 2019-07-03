@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class  name="com.ssh.entity.MhTemplates" table="mh_templates">
+        <id
+        name="ftemplatecode"
+        type="java.lang.String"
+        column="F_TEMPLATECODE"
+    >
+        <generator class="assigned" />
+    </id>
+
+    <property
+        name="ftempname"
+        type="java.lang.String"
+        column="F_TEMPNAME"
+        access="field"
+        length="100"
+    />
+    <property
+        name="frealname"
+        type="java.lang.String"
+        column="F_REALNAME"
+        access="field"
+        length="100"
+    />
+    <property
+        name="ftemptype"
+        type="java.lang.String"
+        column="F_TEMPTYPE"
+        not-null="true"
+        length="2"
+    />
+    <property
+        name="ftempclass"
+        type="java.lang.String"
+        column="F_TEMPCLASS"
+        not-null="true"
+        length="2"
+    />
+    <property
+        name="ftemppath"
+        type="java.lang.String"
+        column="F_TEMPPATH"
+        length="255"
+    />
+    <property
+        name="fsuitecode"
+        type="java.lang.String"
+        column="F_SUITECODE"
+        length="6"
+    />
+    
+   <!--
+    <many-to-one
+        name="mhSuite"
+	    class="com.ssh.entity.MhSuite"
+	    update="false"
+	    insert="false"
+	>
+    	<column name="F_SUITECODE" />
+	</many-to-one>
+    --> 
+    </class>
+</hibernate-mapping>
